@@ -258,10 +258,9 @@ header .head-btn a:hover{
     margin-top: 4rem;
 }
 .third .head-wrap {
-    margin-left: 2rem;
  
 }
-.head-wrap .name {
+.third .head-wrap .name {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     background-color: #E6FAFF;
