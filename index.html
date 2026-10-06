@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/var.css">
+    <link rel="icon" href="./img/fabicon.png" sizes="64x64" type="image/png">
     <style>
 header {
     width: 100%;
@@ -249,6 +250,7 @@ header .head-btn a:hover {
     width: 100%;
     min-height: 48.5rem;
     gap: 5rem;
+    margin-top:  10rem;
 
     display: grid;
 
@@ -345,7 +347,7 @@ header .head-btn a:hover {
 }
 
 .intro-area h2 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 
     font-size: 4.8rem;
     line-height: 1.3;
@@ -376,10 +378,7 @@ header .head-btn a:hover {
     min-width: 9rem;
     height: 4.3rem;
 
-    padding: 0 1.8rem;
-
-    border: 0.1rem solid #2864e6;
-    border-radius: 3rem;
+    padding: 0 1.6rem;
 
     color: #2864e6;
 
@@ -788,9 +787,7 @@ header .head-btn a:hover {
     margin: 0 auto;
 }
 
-.head-wrap {
-    
-}
+
 
 .name {
     display: inline-block;
@@ -869,7 +866,7 @@ header .head-btn a:hover {
     border-radius: 2.5rem;
 
     box-shadow:
-        0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+        0 0 3rem rgba(0, 0, 0, 0.20);
 
     overflow: hidden;
 }
@@ -2810,9 +2807,9 @@ footer .container .footer-wrap .copyright p {
 .hero.port-opening .btn-area a:focus-visible { outline: 3px solid #192c46; outline-offset: 5px; }
 .hero.port-opening .right-area { position: relative; flex: 0 1 43%; width: min(100%,52rem); transform: translate3d(calc(var(--mx)*28px),calc(var(--my)*20px + var(--sy)*-0.32px),0) rotate(calc(var(--mx)*1.5deg)); will-change: transform; }
 .hero.port-opening .port-image-reveal { position: relative; }
-.hero.port-opening .profile { position: relative; width: 100%; aspect-ratio: 4 / 4.7; overflow: hidden; border-radius: 48% 48% 2.5rem 2.5rem; background: #e3efff; box-shadow: 0 24px 64px #2864e618; }
+/* .hero.port-opening .profile { position: relative; width: 100%; aspect-ratio: 4 / 4.7; overflow: hidden; border-radius: 48% 48% 2.5rem 2.5rem; background: #e3efff; box-shadow: 0 24px 64px #2864e618; } */
 .hero.port-opening .profile img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.hero.port-opening .port-orbit { position: absolute; inset: -2.4rem; border: 1px solid #2864e62b; border-radius: 48% 48% 3rem 3rem; pointer-events: none; transform: rotate(-7deg); }
+.hero.port-opening .port-orbit { position: absolute; inset: -2.4rem; border: 1px solid #2864e62b; border-radius: 48% 48% 3rem 3rem; pointer-events: none; /*transform: rotate(-7deg);*/ }
 .hero.port-opening .port-image-caption { position: absolute; left: -2rem; bottom: 3.2rem; padding: 1.5rem 2rem; background: #ffffffed; border: 1px solid #dbe7f8; border-radius: 1.4rem; color: #2864e6; font-size: 1.2rem; letter-spacing: .12em; box-shadow: 0 8px 30px #203a6610; animation: port-float 7s ease-in-out infinite; }
 .hero.port-opening .port-atmosphere { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .hero.port-opening .port-blob { position: absolute; width: 48rem; height: 48rem; border-radius: 50%; filter: blur(65px); opacity: .46; animation: port-drift 14s ease-in-out infinite alternate; }
@@ -2880,7 +2877,7 @@ footer .container .footer-wrap .copyright p {
                 <li><a href="#web4">contact</a></li>
             </ul>
         </nav>
-        <div class="head-btn"><a href="#web4">hire me</a></div>
+        <div class="head-btn"><a href="#web4">contact</a></div>
     </header>
     <main>
         <section class="hero port-opening" aria-label="디자이너 포트폴리오 소개">
@@ -2900,14 +2897,14 @@ footer .container .footer-wrap .copyright p {
                     <div class="port-button-reveal port-reveal">
                         <div class="btn-area">
                             <a href="#web3" class="work"><span>see my works</span></a>
-                            <a href="#web4" class="hire">hire me</a>
+                            <a href="#web4" class="hire">contact</a>
                         </div>
                     </div>
                 </div>
                 <div class="right-area">
                     <div class="port-image-reveal port-reveal">
                         <div class="port-orbit" aria-hidden="true"></div>
-                        <div class="profile"><img src="./img/herowrap.jpg" alt="홍길동의 포트폴리오 Hero 이미지" fetchpriority="high" decoding="async"></div>
+                        <div class="profile"><img src="./img/main-pro.png" alt="홍길동의 포트폴리오 Hero 이미지" fetchpriority="high" decoding="async"></div>
                         <div class="port-image-caption" aria-hidden="true">WEB DESIGN &amp; PUBLISHING</div>
                     </div>
                 </div>
@@ -2918,7 +2915,7 @@ footer .container .footer-wrap .copyright p {
 
         <!-- 2 -->
         <div class="about-wrap" id="web1">
-    <div class="about">about</div>
+    <!-- <div class="about">about</div> -->
 </div>
 
 <section class="second">
@@ -2942,9 +2939,9 @@ footer .container .footer-wrap .copyright p {
                 </h2>
 
                 <div class="tags">
-                    <span>UI/UX</span>
-                    <span>WEB</span>
-                    <span>BRANDING</span>
+                    <span>#UI/UX</span>
+                    <span>#WEB</span>
+                    <span>#BRANDING</span>
                 </div>
             </div>
 
@@ -2990,9 +2987,9 @@ footer .container .footer-wrap .copyright p {
 
         <div class="head-wrap">
 
-            <div class="name">
+            <!-- <div class="name">
                 Skills
-            </div>
+            </div> -->
 
             <div class="head-text">
                 <h2>Tools &amp; Language</h2>
@@ -3204,9 +3201,9 @@ footer .container .footer-wrap .copyright p {
 
             <div class="head-wrap">
 
-                <div class="name">
+                <!-- <div class="name">
                     Projects
-                </div>
+                </div> -->
 
                 <div class="head-text">
                     <h2>Selected Works</h2>
@@ -3217,10 +3214,10 @@ footer .container .footer-wrap .copyright p {
 
             </div>
 
-            <div class="project-count">
+            <!-- <div class="project-count">
                 <strong>8</strong>
                 <span>projects</span>
-            </div>
+            </div> -->
 
         </div>
 
@@ -3644,7 +3641,6 @@ footer .container .footer-wrap .copyright p {
         <div class="head-wrap">
 
             <div class="contact">
-                <p>contact</p>
             </div>
 
         </div>
@@ -3677,7 +3673,7 @@ footer .container .footer-wrap .copyright p {
                     href="mailto:honggyu@gmail.com"
                     class="email"
                 >
-                    <p>honggyu@gmail.com</p>
+                    <p>이력서 바로보기</p>
                     <img src="./img/email-go.svg" alt="이메일 보내기">
                 </a>
 
@@ -3762,7 +3758,7 @@ footer .container .footer-wrap .copyright p {
 
                     <!-- instagram -->
                     <a
-                        href="https://www.instagram.com/"
+                        href="mailto:honggyu@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="selector"
@@ -3772,15 +3768,15 @@ footer .container .footer-wrap .copyright p {
 
                             <div class="icon-box">
                                 <img
-                                    src="./img/insta-icon.png"
-                                    alt="인스타그램"
+                                    src="./img/gmail-icon.png"
+                                    alt="이메일"
                                 >
                             </div>
 
                             <div class="text-area">
 
-                                <h2>Instagram</h2>
-                                <p>@123456</p>
+                                <h2>Gmail</h2>
+                                <p>honggyu@gmail.com</p>
 
                             </div>
 
@@ -3789,7 +3785,7 @@ footer .container .footer-wrap .copyright p {
                         <div class="link">
                             <img
                                 src="./img/link-icon.svg"
-                                alt="인스타그램 바로가기"
+                                alt="이메일"
                             >
                         </div>
 
@@ -3798,7 +3794,7 @@ footer .container .footer-wrap .copyright p {
 
                     <!-- naver blog -->
                     <a
-                        href="https://section.blog.naver.com/"
+                        href="https://github.com/ice234-oo/portforio"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="selector"
@@ -3808,15 +3804,15 @@ footer .container .footer-wrap .copyright p {
 
                             <div class="icon-box">
                                 <img
-                                    src="./img/blog-icon.jpg"
-                                    alt="네이버 블로그"
+                                    src="./img/github-icon.png"
+                                    alt="깃허브"
                                 >
                             </div>
 
                             <div class="text-area">
 
-                                <h2>Naver Blog</h2>
-                                <p>blog.naver.com/hong</p>
+                                <h2>Git hub</h2>
+                                <p>https://github.com/ice234-oo/portforio</p>
 
                             </div>
 
@@ -3825,7 +3821,7 @@ footer .container .footer-wrap .copyright p {
                         <div class="link">
                             <img
                                 src="./img/link-icon.svg"
-                                alt="네이버 블로그 바로가기"
+                                alt="깃허브 바로가기"
                             >
                         </div>
 
