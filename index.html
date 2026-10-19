@@ -3338,7 +3338,14 @@ header .gnb ul li a.section-progress-link::after{content:"";position:absolute;le
 
             <!-- PROJECT 04 -->
             
-            <a href="#" class="project-card" data-modal="./img/project4.jpg" data-link="https://hjk1105.cafe24.com/skin-skin1">
+            <a
+    href="https://carvo.dothome.co.kr"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="project-card project-link">
+
+    <!-- 기존 카드 내부의 이미지와 텍스트는 그대로 유지 -->
+>
 
                 <div class="card-img">
                     <img src="./img/pro4.jpg" alt="쇼핑몰 제작">
@@ -3930,6 +3937,10 @@ document.addEventListener('DOMContentLoaded', function () {
     projectCards.forEach(function (card) {
 
         card.addEventListener('click', function (e) {
+
+            if (card.classList.contains('project-link')) {
+            return;
+        }
 
             e.preventDefault();
 
