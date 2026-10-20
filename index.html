@@ -2738,6 +2738,12 @@ footer .container .footer-wrap .copyright p {
     border-radius: 0;
 }
 
+/* Project 5만 원본 너비 860px로 표시 */
+.project-modal-img.project5-modal-img {
+    width: 860px;
+    margin: 0 auto;
+}
+
 
 /* 닫기 버튼 */
 
@@ -3345,7 +3351,6 @@ header .gnb ul li a.section-progress-link::after{content:"";position:absolute;le
    class="project-card project-link">
 
     <!-- 기존 카드 내부의 이미지와 텍스트는 그대로 유지 -->
->
 
                 <div class="card-img">
                     <img src="./img/pro4.jpg" alt="쇼핑몰 제작">
@@ -3507,24 +3512,24 @@ header .gnb ul li a.section-progress-link::after{content:"";position:absolute;le
 
 
             <!-- PROJECT 10 -->
-            <a href="#" class="project-card more-card">
+            <a href="#" class="project-card more-card" data-modal="./img/project10.jpg">
 
                 <div class="card-img">
-                    <img src="./img/commingsoon.jpg" alt="프로젝트 10">
+                    <img src="./img/pro10.jpg" alt="프로젝트 10">
                     <img src="./img/direct.svg" alt="" class="direct">
                 </div>
 
                 <div class="card-text">
 
-                    <!-- <div class="tag">
+                    <div class="tag">
                         <span>solo</span>
                         <span>Figma</span>
-                        <span>UI/UX</span>
-                    </div> -->
+                        <span>mokup</span>
+                    </div>
 
                     <div class="text-area">
-                        <h2>프로젝트 10</h2>
-                        <!-- <p>UI/UX Design</p> -->
+                        <h2>행사 포스터 제작</h2>
+                        <p>UI Design</p>
                     </div>
 
                 </div>
@@ -3951,7 +3956,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const linkUrl = card.getAttribute('data-link');
 
 
-            /* 이미지 변경 */
+            /* 이미지 변경: project5만 원본 표시 너비(860px) 적용 */
+            modalImg.classList.toggle('project5-modal-img', /(?:^|\/)project5\.jpg(?:\?|$)/i.test(imageSrc || ''));
             modalImg.src = imageSrc;
 
 
